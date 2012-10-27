@@ -15,9 +15,10 @@
 @implementation ViewController
 
 //Synthesize Properties
-@synthesize additionButton, subtractionButton;
+@synthesize additionButton, subtractionButton, multiplicationButton;
 @synthesize label;
 @synthesize calc;
+
 
 //Actions
 //Set value of an operand in model
@@ -35,7 +36,20 @@
 
 }
 -(IBAction)operationPressed:(UIButton *)sender{
-    self.calc.operationType = (sender.tag == 10?addType:subtractType);
+    int type;
+    
+    if (sender.tag == 13) {
+        type = multiplyType;
+    }
+    else if (sender.tag ==10) {
+        type = addType;
+    }
+    else if (sender.tag == 11) {
+        type = subtractType;
+    }
+    
+    self.calc.operationType = type;
+
     [self updateLabel];
     
 }
@@ -57,7 +71,10 @@
     else if(self.calc.operationType == subtractType){
         operationType = @"-";
     }
-    else{
+    else if(self.calc.operationType == multiplyType){
+        operationType = @"*";
+    }
+    else {
         operationType = @"??";
     }
 

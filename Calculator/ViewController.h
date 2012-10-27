@@ -13,6 +13,7 @@
 
 @property (nonatomic, strong) IBOutlet UIButton *additionButton;
 @property (nonatomic, strong) IBOutlet UIButton *subtractionButton;
+@property (nonatomic, strong) IBOutlet UIButton *multiplicationButton;
 @property (nonatomic, strong) IBOutlet UILabel *label;
 
 //Add model object

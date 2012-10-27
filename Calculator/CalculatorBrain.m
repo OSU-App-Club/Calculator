@@ -25,11 +25,15 @@
         case subtractType:
             //Do this for subtract
             return [NSNumber numberWithInt:self.operandA.integerValue - self.operandB.integerValue];
-        default:
+            break;
+        case multiplyType:
+            return [NSNumber numberWithInt:self.operandA.integerValue * self.operandB.integerValue];
+            break;
             
+        default:
             return nil;
             break;
-    }
+        }
     
 }
 
