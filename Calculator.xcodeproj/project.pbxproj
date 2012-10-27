@@ -18,6 +18,7 @@
 		8307148F163B61980052609F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8307148E163B61980052609F /* Default-568h@2x.png */; };
 		83071492163B61980052609F /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83071490163B61980052609F /* MainStoryboard.storyboard */; };
 		83071495163B61980052609F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83071494163B61980052609F /* ViewController.m */; };
+		8307149D163B62170052609F /* CalculatorBrain.m in Sources */ = {isa = PBXBuildFile; fileRef = 8307149C163B62170052609F /* CalculatorBrain.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,8 @@
 		83071491163B61980052609F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		83071493163B61980052609F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		83071494163B61980052609F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8307149B163B62170052609F /* CalculatorBrain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CalculatorBrain.h; path = Calculator/CalculatorBrain.h; sourceTree = "<group>"; };
+		8307149C163B62170052609F /* CalculatorBrain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CalculatorBrain.m; path = Calculator/CalculatorBrain.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,8 @@
 		83071469163B61980052609F = {
 			isa = PBXGroup;
 			children = (
+				8307149B163B62170052609F /* CalculatorBrain.h */,
+				8307149C163B62170052609F /* CalculatorBrain.m */,
 				8307147E163B61980052609F /* Calculator */,
 				83071477163B61980052609F /* Frameworks */,
 				83071475163B61980052609F /* Products */,
@@ -176,6 +181,7 @@
 				83071485163B61980052609F /* main.m in Sources */,
 				83071489163B61980052609F /* AppDelegate.m in Sources */,
 				83071495163B61980052609F /* ViewController.m in Sources */,
+				8307149D163B62170052609F /* CalculatorBrain.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
