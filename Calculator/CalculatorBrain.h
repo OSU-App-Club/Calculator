@@ -11,7 +11,9 @@
 //This just connects names to numbers so using them later is less confusing
 enum operationType {
     addType = 1,
-    subtractType = 2
+    subtractType = 2,
+    multiplyType = 3,
+    divideType = 4
     };
 
 @interface CalculatorBrain : NSObject
