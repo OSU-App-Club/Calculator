@@ -21,12 +21,18 @@
         case addType:
             //Do this for add
             return [NSNumber numberWithInt:self.operandA.integerValue + self.operandB.integerValue];
-            break;
+            break; //Break statements are required at the end of a case so the program does not fall to case below
         case subtractType:
             //Do this for subtract
             return [NSNumber numberWithInt:self.operandA.integerValue - self.operandB.integerValue];
+            break;
+        case multiplyType:
+            return [NSNumber numberWithInt:self.operandA.integerValue * self.operandB.integerValue];
+            break;
+        case divideType:
+            return [NSNumber numberWithInt:self.operandA.integerValue / self.operandB.integerValue];
+            break;
         default:
-            
             return nil;
             break;
     }
