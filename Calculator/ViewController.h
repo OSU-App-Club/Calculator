@@ -24,9 +24,6 @@
 - (IBAction)operationPressed:(UIButton *)sender;
 - (IBAction)equalPressed:(UIButton *)sender;
 
-//Update
-- (void) updateLabel;
-
 
 
 @end

@@ -12,7 +12,12 @@
 enum operationType {
     addType = 1,
     subtractType = 2,
+<<<<<<< HEAD
     multiplyType = 3
+=======
+    multiplyType = 3,
+    divideType = 4
+>>>>>>> master
     };
 
 @interface CalculatorBrain : NSObject
