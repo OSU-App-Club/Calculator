@@ -61,7 +61,7 @@
     
     //Output text
     //This converts the variables we gave, in the format we gave, into a string to give to the label
-    self.label.text = [NSString stringWithFormat:@"%d %@ %d = %d", self.calc.operandA.intValue,operationType,self.calc.operandB.intValue, [self.calc performOperation].intValue];
+    self.label.text = [NSString stringWithFormat:@"%d %@ %d = %.2f", self.calc.operandA.intValue,operationType,self.calc.operandB.intValue, [self.calc performOperation].floatValue];
 
     //Clear values in model
     self.calc.operandA = self.calc.operandB = nil;
